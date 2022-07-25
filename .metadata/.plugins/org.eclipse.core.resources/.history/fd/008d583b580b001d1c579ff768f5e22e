@@ -1,0 +1,24 @@
+package backend;
+
+import javax.servlet.ServletException;
+import java.io.IOException;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class inventoryServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8861793451913072586L;
+	
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	throws SevletException, IOException{
+		System.out.println("Inventory")
+		
+
+		
+	}
+}

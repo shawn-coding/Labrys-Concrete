@@ -1,0 +1,11 @@
+package backend;
+
+import javax.servlet.http.HttpServlet;
+
+public class inventoryServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8861793451913072586L;
+}

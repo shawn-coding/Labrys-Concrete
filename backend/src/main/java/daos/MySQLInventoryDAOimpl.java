@@ -3,6 +3,7 @@ package daos;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import conf.inventoryDBCreds;
@@ -13,7 +14,12 @@ public class MySQLInventoryDAOimpl {
 	public Inventory getAll() throws SQLException {
 		String sql = "SELECT * FROM inventory";
 		try(Connection conn =inventoryDBCreds.getInstance().getConnection()){
-			Statement stmt = conn.prepareStatement(sql);
+			Statement stmt = conn.createStatement();
+			ResultSet rs = executeQuery(stmt);
+			
+			while(rs.next) {
+				Inventory inventory = new Inventory()
+			}
 		}
 		catch(SQLException e){
 			e.printStackTrace();
